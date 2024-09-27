@@ -90,7 +90,7 @@ bool makeMove(int x, int y, std::vector<mineGrid*> gridItems) {
                 return false;
             }
         }
-        if (gi->getDisplay() == "[ ]") emptySpace++;
+        if (gi->getDisplay() == "[ ]" || gi->getDisplay() == "[F]") emptySpace++;
     }
     if (emptySpace == 0) {
         std::cout << "congratulations you successfully disarmed all the mines\nyou win";
