@@ -28,7 +28,7 @@ while (!added) {
     if (!gridItems.at(randMine)->getIsBomb()) {
         gridItems.at(randMine)->setIsBomb();
 
-        gridItems.at(randMine)->setDisplay("[X]"); //för att se och testa minorna
+        //gridItems.at(randMine)->setDisplay("[X]"); //fÃ¶r att se och testa minorna
 
         int surroundx = gridItems.at(randMine)->getCordx() - 1;
         int surroundy = gridItems.at(randMine)->getCordy() - 1;
